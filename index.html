@@ -1,221 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Privacy Policy for Prova, a private nutrition tracking app.">
-  <meta name="theme-color" content="#111111">
-  <title>Privacy Policy | Prova</title>
+  <title>Privacy Policy for Prova</title>
   <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0b0b0c;
-      --surface: #151517;
-      --surface-2: #1c1c1f;
-      --text: #f4f4f5;
-      --muted: #aaaab0;
-      --accent: #f0c040;
-      --border: rgba(255, 255, 255, 0.09);
-      --max-width: 820px;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
-      background:
-        radial-gradient(circle at top left, rgba(240, 192, 64, 0.10), transparent 32rem),
-        var(--bg);
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.7;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-
-    a:hover { text-decoration-thickness: 2px; }
-
-    header {
-      border-bottom: 1px solid var(--border);
-      background: rgba(11, 11, 12, 0.86);
-      backdrop-filter: blur(14px);
-    }
-
-    .hero {
-      width: min(calc(100% - 32px), var(--max-width));
-      margin: 0 auto;
-      padding: 64px 0 46px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--accent);
-      font-size: 0.9rem;
-      font-weight: 750;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .brand-mark {
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 24px rgba(240, 192, 64, 0.65);
-    }
-
-    h1 {
-      margin: 18px 0 10px;
-      font-size: clamp(2.4rem, 7vw, 4.5rem);
-      line-height: 1.04;
-      letter-spacing: -0.045em;
-    }
-
-    .tagline {
-      margin: 0;
-      color: var(--accent);
-      font-size: clamp(1.05rem, 3vw, 1.3rem);
-      font-weight: 700;
-    }
-
-    .updated {
-      margin: 16px 0 0;
-      color: var(--muted);
-      font-size: 0.95rem;
+      background: #111111;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
     }
 
     main {
-      width: min(calc(100% - 32px), var(--max-width));
+      max-width: 860px;
       margin: 0 auto;
-      padding: 36px 0 72px;
+      padding: 40px 20px 64px;
     }
 
-    .intro {
-      margin-bottom: 28px;
-      padding: 24px;
-      border: 1px solid rgba(240, 192, 64, 0.22);
-      border-radius: 20px;
-      background: linear-gradient(145deg, rgba(240, 192, 64, 0.08), rgba(255, 255, 255, 0.02));
-      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+    h1, h2 {
+      color: #f0c040;
+      line-height: 1.3;
     }
 
-    .intro p:first-child {
+    h1 {
       margin-top: 0;
-      font-size: 1.12rem;
-      font-weight: 700;
-    }
-
-    .intro p:last-child { margin-bottom: 0; }
-
-    section {
-      margin-top: 18px;
-      padding: 26px;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      background: linear-gradient(180deg, var(--surface), var(--surface-2));
-      box-shadow: 0 12px 44px rgba(0, 0, 0, 0.18);
+      font-size: 2.2rem;
     }
 
     h2 {
-      margin: 0 0 14px;
-      font-size: 1.28rem;
-      line-height: 1.35;
-      letter-spacing: -0.015em;
+      margin-top: 2rem;
+      font-size: 1.35rem;
     }
 
-    p { margin: 0.75rem 0; color: #dedee2; }
-
-    ul {
-      margin: 0.8rem 0 0.8rem 1.15rem;
-      padding: 0;
+    p, li {
+      color: #e5e5e5;
     }
 
-    li {
-      margin: 0.38rem 0;
-      padding-left: 0.3rem;
-      color: #dedee2;
+    .subtitle {
+      color: #f0c040;
+      font-weight: bold;
+      font-size: 1.1rem;
     }
 
-    li::marker { color: var(--accent); }
+    .updated {
+      color: #aaaaaa;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: #f0c040;
+    }
+
+    ul, ol {
+      padding-left: 1.4rem;
+    }
 
     footer {
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-    }
-
-    .footer-inner {
-      width: min(calc(100% - 32px), var(--max-width));
-      margin: 0 auto;
-      padding: 28px 0 38px;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #333333;
+      color: #aaaaaa;
       font-size: 0.9rem;
-    }
-
-    @media (max-width: 560px) {
-      .hero { padding-top: 44px; }
-      main { padding-top: 24px; }
-      section, .intro {
-        padding: 20px;
-        border-radius: 16px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="hero">
-      <div class="brand"><span class="brand-mark" aria-hidden="true"></span>Prova</div>
-      <h1>Privacy Policy</h1>
-      <p class="tagline">Your data. Your device. Your control.</p>
-      <p class="updated">Last updated: July 2, 2026</p>
-    </div>
-  </header>
-
   <main>
-    <div class="intro">
-      <p>Prova is built around a simple principle: your nutrition data belongs to you.</p>
-      <p>Your food database, nutrition logs, targets, summaries, trends, and settings are stored locally on your device. Prova does not require an account, contain advertising, or operate a developer-controlled cloud database that stores your complete nutrition history.</p>
-      <p>Prova includes an optional AI nutrition-estimation feature. When you choose to use it, the meal description you enter is sent directly from your device to Google's Gemini API using an API key supplied by you.</p>
-    </div>
+    <h1>Privacy Policy for Prova</h1>
+    <p class="subtitle">Your data. Your device. Your control.</p>
+    <p class="updated">Last updated: July 2, 2026</p>
 
-    <section id="section-1"><h2>1. About Prova</h2><p>Prova is a personal nutrition-tracking application developed and published by Rostom Baccar.</p><p>This Privacy Policy explains what information Prova processes, where it is stored, when it may leave your device, and the choices available to you.</p></section>
-<section id="section-2"><h2>2. Information processed by Prova</h2><p>Depending on how you use the app, Prova may process:</p><ul><li>Food names and personal food-database entries</li><li>Calories, protein values, quantities, and serving information</li><li>Ingredients and store or origin information</li><li>Daily nutrition logs</li><li>Calorie and protein targets</li><li>Scores, summaries, trends, and historical statistics</li><li>Application settings and preferences</li><li>CSV import data</li><li>Export and backup information</li><li>Optional meal descriptions submitted for AI estimates</li><li>An optional Gemini API key supplied by you</li></ul><p>This information is processed only to provide the features you choose to use.</p></section>
-<section id="section-3"><h2>3. Local storage and data ownership</h2><p>Your food database, nutrition logs, targets, summaries, trends, and settings are stored locally in Prova&#x27;s application storage, including a local SQLite database.</p><p>The developer does not operate a Prova account system or a cloud nutrition database that receives your complete nutrition history.</p><p>You retain control over your locally stored information. You can:</p><ul><li>Edit or delete individual entries</li><li>Clear all food and nutrition data</li><li>Replace data through an import</li><li>Export copies of your data</li><li>Create a ZIP backup</li><li>Remove or replace your Gemini API key</li><li>Clear Prova&#x27;s application storage</li><li>Uninstall Prova</li></ul><p>Prova does not claim ownership of food entries, meal descriptions, nutrition logs, or exported files created by you.</p></section>
-<section id="section-4"><h2>4. No advertising or behavioral tracking</h2><p>Prova does not contain advertising.</p><p>The developer does not use your nutrition activity to:</p><ul><li>Target advertisements</li><li>Build an advertising profile</li><li>Recommend sponsored products</li><li>Track you across unrelated applications or services</li><li>Sell or rent personal information</li></ul><p>Prova does not intentionally include advertising networks, developer-operated behavioral analytics, or social-tracking SDKs.</p></section>
-<section id="section-5"><h2>5. No mandatory account</h2><p>Prova does not require you to create or access a Prova account.</p><p>The app does not ask you to register with a username, password, email address, phone number, social account, or OAuth provider.</p><p>A Gemini API key is a credential for Google&#x27;s Gemini service. It is not a Prova account or a method of signing in to Prova.</p></section>
-<section id="section-6"><h2>6. Phone permissions and device capabilities</h2><p>Prova does not request access to sensitive phone features such as:</p><ul><li>Precise or approximate location</li><li>Camera</li><li>Microphone</li><li>Contacts</li><li>Phone calls or call history</li><li>SMS messages</li><li>Calendar</li><li>Unrestricted access to your photo or media library</li><li>Health records stored by other applications</li></ul><p>Prova uses device functionality required for its features, including:</p><ul><li>Local application storage</li><li>Secure credential storage</li><li>Internet access for optional Gemini requests and external webpages</li><li>Android&#x27;s system document picker for imports</li><li>Temporary file creation for exports and backups</li><li>Android&#x27;s native sharing interface</li><li>Haptic feedback where supported</li></ul><p>Using Android&#x27;s document picker allows you to choose a specific file. It does not give Prova unrestricted access to all files on your device.</p></section>
-<section id="section-7"><h2>7. Fictional demo data</h2><p>Prova includes an optional demo mode containing fictional food and nutrition information.</p><p>Demo data is provided so you can explore the food log, database, summaries, scores, and trends before creating your own entries.</p><p>Demo information is stored and processed locally. It is not real user data and is not uploaded to a developer-operated server.</p><p>Loading demo data may replace the foods and nutrition logs currently stored in Prova. The app displays a confirmation before this happens.</p><p>You can remove the demo data using Prova&#x27;s local data controls.</p></section>
-<section id="section-8"><h2>8. Optional AI nutrition estimates</h2><p>Prova includes an optional feature that estimates a meal&#x27;s name, calories, and protein from a description written by you.</p><p>This feature works only when you:</p><ul><li>Obtain your own Gemini API key</li><li>Save the key in Prova</li><li>Enter a meal description</li><li>Deliberately request an estimate</li></ul><p>When you request an estimate, Prova sends the following directly to Google&#x27;s Gemini API:</p><ul><li>The meal description you entered</li><li>Instructions asking for an estimated meal name, calorie value, and protein value</li><li>Your Gemini API key, which authenticates the request</li></ul><p>Prova does not route these requests through a server operated by the developer.</p><p>The developer does not provide, own, resell, remotely manage, or intentionally receive your Gemini API key.</p><p>Prova does not intentionally include your complete food database, complete nutrition history, historical summaries, calorie target, or protein target in the request.</p><p>Prova normally attempts to use Gemini 2.5 Flash Lite. If a model is unavailable, overloaded, unsupported, or unable to return a usable response, the app may try another compatible Gemini model.</p><p>Prova applies a local limit of 20 AI-estimate attempts per rolling 24-hour period. The usage count is stored locally on your device.</p><p>The AI feature is optional. Prova&#x27;s manual logging, database, summaries, trends, demo mode, imports, exports, and backups remain available without a Gemini API key.</p></section>
-<section id="section-9"><h2>9. Gemini API-key storage</h2><p>Your Gemini API key is supplied and controlled by you.</p><p>Prova stores the key using the device&#x27;s secure credential-storage system. On supported Android devices, this uses Android Keystore-backed protection.</p><p>The key is transmitted directly to Google&#x27;s Gemini API when you request an estimate. It is not intentionally transmitted to or stored by the developer.</p><p>You are responsible for:</p><ul><li>Protecting your API key</li><li>Monitoring its usage</li><li>Following Google&#x27;s applicable terms</li><li>Replacing it if it may have been exposed</li><li>Removing it when it is no longer needed</li></ul><p>Secure device storage reduces exposure but cannot guarantee protection against every form of device compromise.</p></section>
-<section id="section-10"><h2>10. Google processing</h2><p>Meal descriptions and API credentials submitted to Gemini are processed by Google according to the terms and privacy practices applicable to your Google AI Studio or Gemini API account.</p><p>Google may process or retain submitted information according to its own service terms, account configuration, and applicable policies.</p><p>The developer does not control Google&#x27;s processing and cannot access or delete information retained by Google on your behalf.</p><p>Do not include names, medical records, confidential information, or other sensitive personal information in a meal description.</p></section>
-<section id="section-11"><h2>11. AI accuracy and safety</h2><p>AI-generated estimates may be inaccurate, incomplete, or unsuitable for your circumstances.</p><p>AI entries are created as pending entries so that you can review and edit them.</p><p>You should independently verify nutritional estimates before relying on them.</p><p>Google&#x27;s safety systems may prevent certain descriptions from being processed or may return no estimate.</p></section>
-<section id="section-12"><h2>12. CSV imports</h2><p>Prova allows you to select supported CSV files using your device&#x27;s system document picker.</p><p>Selected files are processed locally to import food-database or nutrition-log information.</p><p>You may choose to merge imported information with existing data or replace supported local data.</p><p>Prova does not automatically upload imported CSV files to a developer-operated server.</p></section>
-<section id="section-13"><h2>13. Exports and backups</h2><p>Prova can generate:</p><ul><li>Food-database CSV files</li><li>Nutrition-log CSV files</li><li>Daily-summary CSV files</li><li>ZIP backups containing exported information</li></ul><p>These files are generated locally.</p><p>When you initiate an export or backup, Prova opens the device&#x27;s native sharing interface. You choose which application, recipient, or storage destination receives the file.</p><p>The developer does not automatically receive exported files.</p><p>After you share a file with another application or service, that third party processes it according to its own privacy practices.</p><p>Temporary export files may remain in Prova&#x27;s cache until they are removed by the app, the operating system, or you.</p></section>
-<section id="section-14"><h2>14. Information not collected by the developer</h2><p>The developer does not operate a backend intended to collect:</p><ul><li>Prova user accounts</li><li>Names or email addresses entered through the app</li><li>Your complete nutrition history</li><li>Advertising identifiers</li><li>Location</li><li>Contacts</li><li>Photos or videos</li><li>Camera or microphone recordings</li><li>Call history</li><li>SMS messages</li><li>Calendar information</li><li>Health records from other applications</li><li>Payment information</li><li>App-usage analytics</li><li>Developer-operated crash reports</li></ul><p>The optional Gemini feature involves direct communication between your device and Google&#x27;s Gemini API as described in this policy.</p></section>
-<section id="section-15"><h2>15. Data security</h2><p>Prova limits exposure by storing your nutrition information locally rather than uploading it to a developer-controlled nutrition database.</p><p>The Gemini API key is stored using secure device credential storage.</p><p>Gemini requests are transmitted over an encrypted HTTPS connection.</p><p>However, no storage or transmission method can be guaranteed to be completely secure. Security may also be affected by:</p><ul><li>The security of your device</li><li>Your screen-lock settings</li><li>Operating-system backups</li><li>Rooted or modified devices</li><li>Malicious or compromised software</li><li>Services selected to receive exported files</li><li>The security of your Google account and API key</li></ul></section>
-<section id="section-16"><h2>16. Data retention and deletion</h2><p>Locally stored data remains on your device until you:</p><ul><li>Delete entries</li><li>Clear all data in Prova</li><li>Replace information through an import</li><li>Remove your Gemini API key</li><li>Clear the application&#x27;s storage</li><li>Delete exported files</li><li>Uninstall Prova</li></ul><p>Because Prova does not create a developer-operated account or upload your complete database to a developer-operated server, the developer normally has no server-side nutrition history to access or delete.</p><p>Information submitted to Gemini may be retained by Google according to the terms and policies applicable to your Gemini API usage.</p></section>
-<section id="section-17"><h2>17. Children&#x27;s privacy</h2><p>Prova is intended for adults and is not directed toward children under 13 or below the applicable minimum age of digital consent in the user&#x27;s jurisdiction.</p><p>The optional Gemini feature also requires access to a Google AI Studio or Gemini API credential and is subject to Google&#x27;s eligibility requirements and terms.</p></section>
-<section id="section-18"><h2>18. Health disclaimer</h2><p>Prova is a personal food and nutrition logging tool.</p><p>It is not a medical device and does not diagnose, treat, cure, or prevent any disease, condition, or injury.</p><p>Calculations, targets, scores, summaries, trends, and AI estimates are provided for general informational purposes only.</p><p>They are not medical, nutritional, or dietary advice.</p><p>Consult a qualified healthcare professional before making significant dietary, medical, or health-related decisions.</p></section>
-<section id="section-19"><h2>19. External webpages and services</h2><p>Prova may open external webpages, including Google AI Studio and this Privacy Policy, in your browser.</p><p>Information processed after leaving Prova is governed by the external website&#x27;s or service&#x27;s own terms and privacy practices.</p></section>
-<section id="section-20"><h2>20. Changes to this Privacy Policy</h2><p>This Privacy Policy may be updated if Prova&#x27;s functionality, integrations, permissions, or data-handling practices change.</p><p>The date at the top of this page will be revised when an updated version is published.</p></section>
-<section id="section-21"><h2>21. Contact</h2><p>Prova is developed and published by Rostom Baccar.</p><p>For privacy questions, contact <a href="mailto:rostombaccar.et@gmail">rostombaccar.et@gmail</a>.</p></section>
-  </main>
+    <p>Prova is built around a simple principle: your nutrition data belongs to you.</p>
 
-  <footer>
-    <div class="footer-inner">
+    <p>Your food database, nutrition logs, targets, summaries, trends, and settings are stored locally on your device. Prova does not require an account, contain advertising, or operate a developer-controlled cloud database that stores your complete nutrition history.</p>
+
+    <p>Prova includes an optional AI nutrition-estimation feature. When you choose to use it, the meal description you enter is sent directly from your device to Google's Gemini API using an API key supplied by you.</p>
+
+    <h2>1. About Prova</h2>
+    <p>Prova is a personal nutrition-tracking application developed and published by Rostom Baccar.</p>
+    <p>This Privacy Policy explains what information Prova processes, where it is stored, when it may leave your device, and the choices available to you.</p>
+
+    <h2>2. Information processed by Prova</h2>
+    <p>Depending on how you use the app, Prova may process:</p>
+    <ul>
+      <li>Food names and personal food-database entries</li>
+      <li>Calories, protein values, quantities, and serving information</li>
+      <li>Ingredients and store or origin information</li>
+      <li>Daily nutrition logs</li>
+      <li>Calorie and protein targets</li>
+      <li>Scores, summaries, trends, and historical statistics</li>
+      <li>Application settings and preferences</li>
+      <li>CSV import data</li>
+      <li>Export and backup information</li>
+      <li>Optional meal descriptions submitted for AI estimates</li>
+      <li>An optional Gemini API key supplied by you</li>
+    </ul>
+    <p>This information is processed only to provide the features you choose to use.</p>
+
+    <h2>3. Local storage and data ownership</h2>
+    <p>Your food database, nutrition logs, targets, summaries, trends, and settings are stored locally in Prova's application storage, including a local SQLite database.</p>
+    <p>The developer does not operate a Prova account system or a cloud nutrition database that receives your complete nutrition history.</p>
+    <p>You retain control over your locally stored information. You can:</p>
+    <ul>
+      <li>Edit or delete individual entries</li>
+      <li>Clear all food and nutrition data</li>
+      <li>Replace data through an import</li>
+      <li>Export copies of your data</li>
+      <li>Create a ZIP backup</li>
+      <li>Remove or replace your Gemini API key</li>
+      <li>Clear Prova's application storage</li>
+      <li>Uninstall Prova</li>
+    </ul>
+    <p>Prova does not claim ownership of food entries, meal descriptions, nutrition logs, or exported files created by you.</p>
+
+    <h2>4. No advertising or behavioral tracking</h2>
+    <p>Prova does not contain advertising.</p>
+    <p>The developer does not use your nutrition activity to:</p>
+    <ul>
+      <li>Target advertisements</li>
+      <li>Build an advertising profile</li>
+      <li>Recommend sponsored products</li>
+      <li>Track you across unrelated applications or services</li>
+      <li>Sell or rent personal information</li>
+    </ul>
+    <p>Prova does not intentionally include advertising networks, developer-operated behavioral analytics, or social-tracking SDKs.</p>
+
+    <h2>5. No mandatory account</h2>
+    <p>Prova does not require you to create or access a Prova account.</p>
+    <p>The app does not ask you to register with a username, password, email address, phone number, social account, or OAuth provider.</p>
+    <p>A Gemini API key is a credential for Google's Gemini service. It is not a Prova account or a method of signing in to Prova.</p>
+
+    <h2>6. Phone permissions and device capabilities</h2>
+    <p>Prova does not request access to sensitive phone features such as:</p>
+    <ul>
+      <li>Precise or approximate location</li>
+      <li>Camera</li>
+      <li>Microphone</li>
+      <li>Contacts</li>
+      <li>Phone calls or call history</li>
+      <li>SMS messages</li>
+      <li>Calendar</li>
+      <li>Unrestricted access to your photo or media library</li>
+      <li>Health records stored by other applications</li>
+    </ul>
+
+    <p>Prova uses device functionality required for its features, including:</p>
+    <ul>
+      <li>Local application storage</li>
+      <li>Secure credential storage</li>
+      <li>Internet access for optional Gemini requests and external webpages</li>
+      <li>Android's system document picker for imports</li>
+      <li>Temporary file creation for exports and backups</li>
+      <li>Android's native sharing interface</li>
+      <li>Haptic feedback where supported</li>
+    </ul>
+    <p>Using Android's document picker allows you to choose a specific file. It does not give Prova unrestricted access to all files on your device.</p>
+
+    <h2>7. Fictional demo data</h2>
+    <p>Prova includes an optional demo mode containing fictional food and nutrition information.</p>
+    <p>Demo data is provided so you can explore the food log, database, summaries, scores, and trends before creating your own entries.</p>
+    <p>Demo information is stored and processed locally. It is not real user data and is not uploaded to a developer-operated server.</p>
+    <p>Loading demo data may replace the foods and nutrition logs currently stored in Prova. The app displays a confirmation before this happens.</p>
+    <p>You can remove the demo data using Prova's local data controls.</p>
+
+    <h2>8. Optional AI nutrition estimates</h2>
+    <p>Prova includes an optional feature that estimates a meal's name, calories, and protein from a description written by you.</p>
+    <p>This feature works only when you:</p>
+    <ol>
+      <li>Obtain your own Gemini API key</li>
+      <li>Save the key in Prova</li>
+      <li>Enter a meal description</li>
+      <li>Deliberately request an estimate</li>
+    </ol>
+
+    <p>When you request an estimate, Prova sends the following directly to Google's Gemini API:</p>
+    <ul>
+      <li>The meal description you entered</li>
+      <li>Instructions asking for an estimated meal name, calorie value, and protein value</li>
+      <li>Your Gemini API key, which authenticates the request</li>
+    </ul>
+
+    <p>Prova does not route these requests through a server operated by the developer.</p>
+    <p>The developer does not provide, own, resell, remotely manage, or intentionally receive your Gemini API key.</p>
+    <p>Prova does not intentionally include your complete food database, complete nutrition history, historical summaries, calorie target, or protein target in the request.</p>
+    <p>Prova normally attempts to use Gemini 2.5 Flash Lite. If a model is unavailable, overloaded, unsupported, or unable to return a usable response, the app may try another compatible Gemini model.</p>
+    <p>Prova applies a local limit of 20 AI-estimate attempts per rolling 24-hour period. The usage count is stored locally on your device.</p>
+    <p>The AI feature is optional. Prova's manual logging, database, summaries, trends, demo mode, imports, exports, and backups remain available without a Gemini API key.</p>
+
+    <h2>9. Gemini API-key storage</h2>
+    <p>Your Gemini API key is supplied and controlled by you.</p>
+    <p>Prova stores the key using the device's secure credential-storage system. On supported Android devices, this uses Android Keystore-backed protection.</p>
+    <p>The key is transmitted directly to Google's Gemini API when you request an estimate. It is not intentionally transmitted to or stored by the developer.</p>
+    <p>You are responsible for:</p>
+    <ul>
+      <li>Protecting your API key</li>
+      <li>Monitoring its usage</li>
+      <li>Following Google's applicable terms</li>
+      <li>Replacing it if it may have been exposed</li>
+      <li>Removing it when it is no longer needed</li>
+    </ul>
+    <p>Secure device storage reduces exposure but cannot guarantee protection against every form of device compromise.</p>
+
+    <h2>10. Google processing</h2>
+    <p>Meal descriptions and API credentials submitted to Gemini are processed by Google according to the terms and privacy practices applicable to your Google AI Studio or Gemini API account.</p>
+    <p>Google may process or retain submitted information according to its own service terms, account configuration, and applicable policies.</p>
+    <p>The developer does not control Google's processing and cannot access or delete information retained by Google on your behalf.</p>
+    <p>Do not include names, medical records, confidential information, or other sensitive personal information in a meal description.</p>
+
+    <h2>11. AI accuracy and safety</h2>
+    <p>AI-generated estimates may be inaccurate, incomplete, or unsuitable for your circumstances.</p>
+    <p>AI entries are created as pending entries so that you can review and edit them.</p>
+    <p>You should independently verify nutritional estimates before relying on them.</p>
+    <p>Google's safety systems may prevent certain descriptions from being processed or may return no estimate.</p>
+
+    <h2>12. CSV imports</h2>
+    <p>Prova allows you to select supported CSV files using your device's system document picker.</p>
+    <p>Selected files are processed locally to import food-database or nutrition-log information.</p>
+    <p>You may choose to merge imported information with existing data or replace supported local data.</p>
+    <p>Prova does not automatically upload imported CSV files to a developer-operated server.</p>
+
+    <h2>13. Exports and backups</h2>
+    <p>Prova can generate:</p>
+    <ul>
+      <li>Food-database CSV files</li>
+      <li>Nutrition-log CSV files</li>
+      <li>Daily-summary CSV files</li>
+      <li>ZIP backups containing exported information</li>
+    </ul>
+    <p>These files are generated locally.</p>
+    <p>When you initiate an export or backup, Prova opens the device's native sharing interface. You choose which application, recipient, or storage destination receives the file.</p>
+    <p>The developer does not automatically receive exported files.</p>
+    <p>After you share a file with another application or service, that third party processes it according to its own privacy practices.</p>
+    <p>Temporary export files may remain in Prova's cache until they are removed by the app, the operating system, or you.</p>
+
+    <h2>14. Information not collected by the developer</h2>
+    <p>The developer does not operate a backend intended to collect:</p>
+    <ul>
+      <li>Prova user accounts</li>
+      <li>Names or email addresses entered through the app</li>
+      <li>Your complete nutrition history</li>
+      <li>Advertising identifiers</li>
+      <li>Location</li>
+      <li>Contacts</li>
+      <li>Photos or videos</li>
+      <li>Camera or microphone recordings</li>
+      <li>Call history</li>
+      <li>SMS messages</li>
+      <li>Calendar information</li>
+      <li>Health records from other applications</li>
+      <li>Payment information</li>
+      <li>App-usage analytics</li>
+      <li>Developer-operated crash reports</li>
+    </ul>
+    <p>The optional Gemini feature involves direct communication between your device and Google's Gemini API as described in this policy.</p>
+
+    <h2>15. Data security</h2>
+    <p>Prova limits exposure by storing your nutrition information locally rather than uploading it to a developer-controlled nutrition database.</p>
+    <p>The Gemini API key is stored using secure device credential storage.</p>
+    <p>Gemini requests are transmitted over an encrypted HTTPS connection.</p>
+    <p>However, no storage or transmission method can be guaranteed to be completely secure. Security may also be affected by:</p>
+    <ul>
+      <li>The security of your device</li>
+      <li>Your screen-lock settings</li>
+      <li>Operating-system backups</li>
+      <li>Rooted or modified devices</li>
+      <li>Malicious or compromised software</li>
+      <li>Services selected to receive exported files</li>
+      <li>The security of your Google account and API key</li>
+    </ul>
+
+    <h2>16. Data retention and deletion</h2>
+    <p>Locally stored data remains on your device until you:</p>
+    <ul>
+      <li>Delete entries</li>
+      <li>Clear all data in Prova</li>
+      <li>Replace information through an import</li>
+      <li>Remove your Gemini API key</li>
+      <li>Clear the application's storage</li>
+      <li>Delete exported files</li>
+      <li>Uninstall Prova</li>
+    </ul>
+    <p>Because Prova does not create a developer-operated account or upload your complete database to a developer-operated server, the developer normally has no server-side nutrition history to access or delete.</p>
+    <p>Information submitted to Gemini may be retained by Google according to the terms and policies applicable to your Gemini API usage.</p>
+
+    <h2>17. Children's privacy</h2>
+    <p>Prova is intended for adults and is not directed toward children under 13 or below the applicable minimum age of digital consent in the user's jurisdiction.</p>
+    <p>The optional Gemini feature also requires access to a Google AI Studio or Gemini API credential and is subject to Google's eligibility requirements and terms.</p>
+
+    <h2>18. Health disclaimer</h2>
+    <p>Prova is a personal food and nutrition logging tool.</p>
+    <p>It is not a medical device and does not diagnose, treat, cure, or prevent any disease, condition, or injury.</p>
+    <p>Calculations, targets, scores, summaries, trends, and AI estimates are provided for general informational purposes only.</p>
+    <p>They are not medical, nutritional, or dietary advice.</p>
+    <p>Consult a qualified healthcare professional before making significant dietary, medical, or health-related decisions.</p>
+
+    <h2>19. External webpages and services</h2>
+    <p>Prova may open external webpages, including Google AI Studio and this Privacy Policy, in your browser.</p>
+    <p>Information processed after leaving Prova is governed by the external website's or service's own terms and privacy practices.</p>
+
+    <h2>20. Changes to this Privacy Policy</h2>
+    <p>This Privacy Policy may be updated if Prova's functionality, integrations, permissions, or data-handling practices change.</p>
+    <p>The date at the top of this page will be revised when an updated version is published.</p>
+
+    <h2>21. Contact</h2>
+    <p>Prova is developed and published by Rostom Baccar.</p>
+    <p>For privacy questions, contact <a href="mailto:rostombaccar.et@gmail.com">rostombaccar.et@gmail.com</a>.</p>
+
+    <footer>
       © 2026 Rostom Baccar. Privacy Policy for Prova.
-    </div>
-  </footer>
+    </footer>
+  </main>
 </body>
 </html>
