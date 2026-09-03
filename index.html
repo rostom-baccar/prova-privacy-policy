@@ -34,7 +34,7 @@
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --background: #0d0d1a;
+        --background: #121c38;
         --surface: #171727;
         --surface-secondary: #11111f;
         --text: #f7f7fa;
@@ -247,7 +247,7 @@
       <h1>Privacy Policy for Prova</h1>
 
       <p class="updated">
-        <strong>Last updated:</strong> August 12, 2026
+        <strong>Last updated:</strong> September 3, 2026
       </p>
 
       <p class="tagline">
@@ -261,9 +261,9 @@
       </p>
 
       <p>
-        Your food database, dishes, nutrition logs, weight and steps entries,
-        targets, summaries, custom metrics, and settings are stored locally on
-        your device.
+        Your food database, dishes, nutrition logs, weight, steps, and water
+        entries, targets, summaries, custom metrics, and settings are stored
+        locally on your device.
       </p>
 
       <p>
@@ -376,12 +376,12 @@
     <ul>
       <li>Food names and personal food-database entries;</li>
       <li>
-        Calories, protein, optional fiber and carbs, quantities, unit types,
-        and serving information;
+        Calories, protein, optional fat, fiber and carbs, quantities, unit
+        types, and serving information;
       </li>
       <li>Saved dishes (multi-food meals) and their constituents;</li>
       <li>Daily nutrition logs, including optional pending or complete status;</li>
-      <li>Weight entries and steps entries;</li>
+      <li>Weight entries, steps entries, and water / hydration entries;</li>
       <li>Calorie and protein targets, and optional body-profile fields used
         for local calorie estimates;</li>
       <li>Custom metrics you define, plus scores, summaries, trends, and
@@ -423,8 +423,8 @@
     <h2>3. Local storage and data ownership</h2>
 
     <p>
-      Your food database, dishes, nutrition logs, weight and steps data,
-      targets, summaries, trends, custom metrics, and settings are stored
+      Your food database, dishes, nutrition logs, weight, steps, and water
+      data, targets, summaries, trends, custom metrics, and settings are stored
       locally on your device (SQLite and related app storage).
     </p>
 
@@ -591,8 +591,8 @@
     <h2>8. Optional AI nutrition estimates</h2>
 
     <p>
-      Prova can estimate calories, protein, and optionally fiber and carbs
-      from a meal description and/or a meal photo you choose.
+      Prova can estimate calories, protein, and optionally fat, fiber, and
+      carbs from a meal description and/or a meal photo you choose.
     </p>
 
     <h3>How you can access AI estimates</h3>
@@ -638,7 +638,7 @@
       <li>A compressed meal photo for that request, if any;</li>
       <li>
         Instructions asking for an estimated name, calories, protein, and
-        optional fiber/carbs; and
+        optional fat/fiber/carbs; and
       </li>
       <li>
         Authentication via your Gemini API key (BYOK) or Firebase App Check
@@ -726,10 +726,11 @@
 
     <p>
       Imports and exports are processed locally. Prova can generate
-      food-database, nutrition-log, and daily-summary CSV files, and ZIP
-      backups of those exports. Exports do not include your Gemini API key.
-      Current exports may not include every local table (for example weight or
-      steps may be absent from CSV/ZIP depending on version).
+      food-database and nutrition-log CSV files, plus full ZIP backups that
+      may also include weight and steps depending on version. Water entries
+      stay on-device and may not be included in every export format. Exports do
+      not include a derived daily-summary CSV (daily totals come from your
+      logs) and do not include your Gemini API key.
     </p>
 
     <p>
