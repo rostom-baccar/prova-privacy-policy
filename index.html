@@ -247,7 +247,7 @@
       <h1>Privacy Policy for Prova</h1>
 
       <p class="updated">
-        <strong>Last updated:</strong> September 3, 2026
+        <strong>Last updated:</strong> September 18, 2026
       </p>
 
       <p class="tagline">
@@ -261,7 +261,7 @@
       </p>
 
       <p>
-        Your food database, dishes, nutrition logs, weight, steps, and water
+        Your food database, recipes, nutrition logs, weight, steps, and water
         entries, targets, summaries, custom metrics, and settings are stored
         locally on your device.
       </p>
@@ -275,7 +275,7 @@
       <p>
         Prova does not request access to your location, contacts, calls,
         messages, or calendar. Camera and photo-library access are optional
-        (barcode scan or meal photo for AI Estimate). Microphone access is
+        (barcode scan or meal photos for AI Estimate). Microphone access is
         optional (on-device Dictate on AI Estimate). Speech-to-text runs on
         your device. Prova does not upload audio. Estimate photos are not
         stored by Prova.
@@ -290,8 +290,8 @@
 
       <p>
         Optional AI features may send limited information to Google (meal text
-        and/or a compressed meal photo for estimates, or a compact set of
-        derived facts for optional For You wording). Free or subscription AI
+        and/or one or more compressed meal photos for estimates, or a compact
+        set of derived facts for optional For You wording). Free or subscription AI
         uses Google Firebase AI Logic with Firebase App Check under the
         developer&rsquo;s Firebase project. Bring-your-own-key (BYOK) AI talks
         to Google&rsquo;s Gemini API with your key. Neither path uploads your
@@ -379,7 +379,7 @@
         Calories, protein, optional fat, fiber and carbs, quantities, unit
         types, and serving information;
       </li>
-      <li>Saved dishes (multi-food meals) and their constituents;</li>
+      <li>Saved recipes (multi-food meals) and their constituents;</li>
       <li>Daily nutrition logs, including optional pending or complete status;</li>
       <li>Weight entries, steps entries, and water / hydration entries;</li>
       <li>Calorie and protein targets, and optional body-profile fields used
@@ -423,7 +423,7 @@
     <h2>3. Local storage and data ownership</h2>
 
     <p>
-      Your food database, dishes, nutrition logs, weight, steps, and water
+      Your food database, recipes, nutrition logs, weight, steps, and water
       data, targets, summaries, trends, custom metrics, and settings are stored
       locally on your device (SQLite and related app storage).
     </p>
@@ -462,7 +462,7 @@
     <h2>4. Local search, filters, and organization</h2>
 
     <p>
-      Searching your foods and log history, filtering, sorting, dish
+      Searching your foods and log history, filtering, sorting, recipe
       management, and related organization features run on your device. They
       do not send your search terms, filters, sort choices, or nutrition
       history to a developer-operated server.
@@ -504,7 +504,7 @@
 
       <div class="permission-item">
         <strong>Camera</strong>
-        Optional barcode scan or AI meal photo. Estimate photos are not stored by Prova
+        Optional barcode scan or AI meal photos. Estimate photos are not stored by Prova
       </div>
 
       <div class="permission-item">
@@ -524,7 +524,7 @@
 
       <div class="permission-item">
         <strong>Photos and media</strong>
-        Optional only to pick a barcode image or an AI meal photo. No unrestricted library access
+        Optional only to pick a barcode image or AI meal photos. No unrestricted library access
       </div>
 
       <div class="permission-item">
@@ -592,7 +592,8 @@
 
     <p>
       Prova can estimate calories, protein, and optionally fat, fiber, and
-      carbs from a meal description and/or a meal photo you choose.
+      carbs from a meal description and/or one or more meal photos you choose
+      (currently up to four photos per estimate).
     </p>
 
     <h3>How you can access AI estimates</h3>
@@ -624,9 +625,11 @@
     <p>
       AI runs only when you deliberately request an estimate. You may type or
       dictate a description (dictation is on-device; audio is not uploaded) and
-      optionally attach a camera or gallery photo. Photos are compressed for
-      the request, are not saved into your nutrition log by Prova, and are not
-      kept on a developer server.
+      optionally attach one or more camera or gallery photos. Photos are
+      compressed for the request, are not saved into your nutrition log by
+      Prova, and are not kept on a developer server. When several photos are
+      attached, Prova may estimate them as one combined meal or prompt you to
+      confirm how they should be treated.
     </p>
 
     <p>
@@ -635,10 +638,11 @@
 
     <ul>
       <li>Meal description text you entered or accepted, if any;</li>
-      <li>A compressed meal photo for that request, if any;</li>
+      <li>One or more compressed meal photos for that request, if any;</li>
       <li>
-        Instructions asking for an estimated name, calories, protein, and
-        optional fat/fiber/carbs; and
+        Instructions asking for an estimated name, calories, protein,
+        optional fat/fiber/carbs, and optional ingredient or dish breakdown;
+        and
       </li>
       <li>
         Authentication via your Gemini API key (BYOK) or Firebase App Check
