@@ -247,7 +247,7 @@
       <h1>Privacy Policy for Prova</h1>
 
       <p class="updated">
-        <strong>Last updated:</strong> September 18, 2026
+        <strong>Last updated:</strong> October 10, 2026
       </p>
 
       <p class="tagline">
@@ -296,6 +296,9 @@
         developer&rsquo;s Firebase project. Bring-your-own-key (BYOK) AI talks
         to Google&rsquo;s Gemini API with your key. Neither path uploads your
         complete diary to a developer-operated nutrition server.
+        An optional Connect other apps feature can upload a Personal snapshot
+        to an address you choose. That copy is not sent to the developer unless
+        you point Prova at an address the developer controls.
       </p>
 
       <p>
@@ -324,7 +327,8 @@
         <li>Your activity is not used to create an advertising profile.</li>
         <li>
           Your complete nutrition history is not uploaded to a
-          developer-operated nutrition database.
+          developer-operated nutrition database. Optional app connections go
+          only to an address you enter.
         </li>
         <li>The developer does not sell or rent user data.</li>
         <li>CSV imports are processed locally.</li>
@@ -742,6 +746,25 @@
       share sheet. The developer does not automatically receive those files.
     </p>
 
+    <h3>Optional connections to other apps</h3>
+
+    <p>
+      Connect other apps is off until you turn it on in Settings. You paste
+      an address you control, usually a Cloudflare Worker you deploy yourself.
+      Prova then uploads a Personal snapshot: food names, meals, targets,
+      weight, steps, and water. Demo data is not included. The upload happens
+      when Prova is open and online. It is not a live connection to the phone.
+    </p>
+
+    <p>
+      The remote copy is readable only with a token stored on your device.
+      Stop sharing deletes that copy when the address is reachable, and
+      removes the token from the phone. If Prova does not update the copy for
+      90 days, it expires. Whoever controls the address can read the snapshot.
+      If that address is your own Cloudflare account, the developer does not
+      receive the diary.
+    </p>
+
     <h2>13. Widgets and local reminders</h2>
 
     <p>
@@ -794,8 +817,9 @@
       <li>Document picker and share sheet for import/export;</li>
       <li>
         Internet access for optional AI (Firebase and/or Gemini), optional
-        Open Food Facts, App Check / Play Integrity when using free Firebase
-        AI, optional Play Billing, and external webpages; and
+        Open Food Facts, optional Connect other apps when you turn it on, App
+        Check / Play Integrity when using free Firebase AI, optional Play
+        Billing, and external webpages; and
       </li>
       <li>Haptic feedback where supported.</li>
     </ul>
@@ -838,7 +862,9 @@
     <p>
       Because Prova does not host your complete diary on a developer server,
       the developer normally has no server-side nutrition history to access or
-      delete.
+      delete. A copy you upload to an address you control is deleted from that
+      address when you stop sharing, or it expires after 90 days without an
+      update.
     </p>
 
     <h2>19. Children&rsquo;s privacy</h2>
@@ -887,11 +913,15 @@
         barcode lookup;
       </li>
       <li>
-        <strong>Android Health Connect</strong> when you opt in; and
+        <strong>Android Health Connect</strong> when you opt in;
       </li>
       <li>
         Apps or cloud storage you choose when sharing exports, plus any tip
-        page you open voluntarily.
+        page you open voluntarily; and
+      </li>
+      <li>
+        <strong>Cloudflare Workers</strong>, only if you deploy or choose a
+        share address there for Connect other apps.
       </li>
     </ul>
 
