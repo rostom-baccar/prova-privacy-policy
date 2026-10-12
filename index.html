@@ -247,7 +247,7 @@
       <h1>Privacy Policy for Prova</h1>
 
       <p class="updated">
-        <strong>Last updated:</strong> October 10, 2026
+        <strong>Last updated:</strong> October 12, 2026
       </p>
 
       <p class="tagline">
@@ -302,6 +302,35 @@
       </p>
 
       <p>
+        <strong>Offline-first means your diary works on this device.</strong>
+        Core logging, foods, recipes, Insights, and settings do not require a
+        network connection. Optional features that use the internet (AI meal
+        estimates, Online food search / barcode lookup, Connect other apps,
+        and related Google Play / App Check traffic) send only what that
+        feature needs, and only when you use them. AI estimates are not an
+        offline feature: meal text and/or compressed photos leave your device
+        and go to Google for that request. Your optional Gemini API key is
+        stored in the device secure store, not in CSV or ZIP exports.
+      </p>
+
+      <p>
+        <strong>You can delete your data.</strong>
+        Edit or delete individual entries anytime. Use
+        <strong>Reset personal data</strong> in Settings to wipe Personal
+        foods, logs, recipes, weight, steps, custom metrics, and milestones on
+        this device. You can also clear Prova&rsquo;s app data in Android
+        settings or uninstall the app. The developer does not host your
+        complete diary, so there is normally no developer-side copy to delete.
+        That is not the same as &ldquo;data cannot be deleted.&rdquo;
+      </p>
+
+      <p>
+        The developer does not collect your personal nutrition diary, does not
+        run developer analytics or crash logging that receive your diary
+        contents, and does not build advertising profiles from your activity.
+      </p>
+
+      <p>
         Prova also includes optional fictional demo data so you can explore the
         app before entering your own information. Demo data is stored locally.
       </p>
@@ -313,6 +342,18 @@
       <ul>
         <li><strong>Your nutrition data belongs to you.</strong></li>
         <li>Your nutrition history is stored locally by default.</li>
+        <li>
+          Offline-first applies to your diary. Optional AI and Online search
+          use the network only when you use them.
+        </li>
+        <li>
+          You can delete Personal data in Settings (Reset personal data), by
+          clearing app data, or by uninstalling.
+        </li>
+        <li>
+          The developer does not collect personal nutrition logs or
+          developer-operated analytics / crash reports containing your diary.
+        </li>
         <li>No Prova account is required.</li>
         <li>No advertising is displayed.</li>
         <li>
@@ -449,13 +490,21 @@
 
     <ul>
       <li>Edit or delete individual entries;</li>
+      <li>
+        Use <strong>Reset personal data</strong> in Settings to wipe Personal
+        foods, logs, recipes, weight, steps, custom metrics, and milestones
+        (Demo data and your settings can remain);
+      </li>
       <li>Replace data through an import;</li>
       <li>Export copies of your data;</li>
       <li>Create a full backup;</li>
-      <li>Remove or replace your Gemini API key;</li>
+      <li>
+        Remove or replace your Gemini API key (stored in secure device
+        credential storage, not in exports);
+      </li>
       <li>Disconnect Health Connect or turn off related options;</li>
-      <li>Clear Prova&rsquo;s application data; or</li>
-      <li>Delete locally stored Prova data by uninstalling the application.</li>
+      <li>Clear Prova&rsquo;s application data in Android system settings; or</li>
+      <li>Uninstall the application to remove local Prova storage.</li>
     </ul>
 
     <p>
@@ -598,6 +647,16 @@
       Prova can estimate calories, protein, and optionally fat, fiber, and
       carbs from a meal description and/or one or more meal photos you choose
       (currently up to four photos per estimate).
+    </p>
+
+    <p>
+      <strong>AI estimates leave your device.</strong>
+      Offline-first describes the diary, not AI. When you tap to run an
+      estimate, the meal text and/or compressed photos for that request are
+      sent to Google over the internet (Firebase AI Logic on the free or
+      subscription path, or Google&rsquo;s Gemini API when you use your own
+      key). Prova does not keep those estimate photos in your nutrition log
+      or on a developer server. Core logging still works if you never use AI.
     </p>
 
     <h3>How you can access AI estimates</h3>
@@ -781,12 +840,22 @@
     <h2>14. Information not collected by the developer</h2>
 
     <p>
-      The developer does not operate a backend that collects:
+      The developer does not operate a backend that collects personal nutrition
+      data or personal usage logs. In particular, the developer does not
+      collect:
     </p>
 
     <ul>
       <li>Prova user accounts or sign-in profiles;</li>
       <li>Your complete nutrition history as a hosted diary;</li>
+      <li>
+        Personal food logs, weight, steps, water, targets, or custom metrics
+        as telemetry to the developer;
+      </li>
+      <li>
+        Developer-operated analytics, crash reporting, or behavioral logs that
+        receive your diary contents;
+      </li>
       <li>Advertising identifiers for ads;</li>
       <li>Precise or approximate location;</li>
       <li>Contacts, call history, SMS, or calendar data;</li>
@@ -805,7 +874,8 @@
       Limited content you submit for optional AI, Open Food Facts lookups you
       trigger, App Check attestation traffic, and (when offered) Play Billing
       purchase state involve third parties as described in this policy. Those
-      are not a substitute for a Prova cloud diary.
+      are not a substitute for a Prova cloud diary, and they are not developer
+      analytics of your personal diary.
     </p>
 
     <h2>15. Device capabilities used by Prova</h2>
@@ -846,25 +916,46 @@
       apps you share exports with can affect security.
     </p>
 
-    <h2>18. Data retention and deletion</h2>
+    <h2 id="data-deletion">18. Data retention and deletion</h2>
 
     <p>
-      Local data remains until you edit or delete it, import over it, clear
-      app data, remove your API key, delete exports, or uninstall Prova.
+      <strong>Your Prova data can be deleted.</strong>
+      Personal nutrition data lives on your device by default. You can delete
+      it without contacting the developer:
     </p>
 
-    <p>
-      Information sent to Google (Gemini / Firebase AI) or Open Food Facts may
-      be retained under those parties&rsquo; policies. The developer cannot
-      retrieve or delete data held only by those third parties on your behalf.
-    </p>
+    <ul>
+      <li>Edit or delete individual entries in the app;</li>
+      <li>
+        Use <strong>Reset personal data</strong> in Settings to wipe Personal
+        foods, logs, recipes, weight, steps, custom metrics, and milestones;
+      </li>
+      <li>Clear Prova&rsquo;s application data in Android system settings;</li>
+      <li>Remove your Gemini API key;</li>
+      <li>Delete exported files you created; or</li>
+      <li>Uninstall Prova to remove local app storage.</li>
+    </ul>
 
     <p>
       Because Prova does not host your complete diary on a developer server,
       the developer normally has no server-side nutrition history to access or
-      delete. A copy you upload to an address you control is deleted from that
-      address when you stop sharing, or it expires after 90 days without an
-      update.
+      delete for you. That means there is usually nothing for the developer to
+      erase remotely. It does <strong>not</strong> mean your data cannot be
+      deleted. You delete it on the device (or, for Connect other apps, you
+      stop sharing so the remote snapshot is deleted or expires).
+    </p>
+
+    <p>
+      Information sent to Google (Gemini / Firebase AI) or Open Food Facts when
+      you use those optional features may be retained under those
+      parties&rsquo; policies. The developer cannot retrieve or delete copies
+      held only by those third parties on your behalf.
+    </p>
+
+    <p>
+      A Personal snapshot you upload to an address you control for Connect
+      other apps is deleted from that address when you stop sharing, or it
+      expires after 90 days without an update.
     </p>
 
     <h2>19. Children&rsquo;s privacy</h2>
